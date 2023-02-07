@@ -13,6 +13,8 @@ const todoRoutes = require('./routes/todos')
 
 require('dotenv').config({path: './config/.env'})
 
+mongoose.set('strictQuery', true);
+
 // Passport config
 require('./config/passport')(passport)
 
