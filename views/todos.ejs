@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c15b095f83.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <title>Document</title>
+    <link rel='stylesheet' href="css/todos.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container px-lg-5">
+            <a class="navbar-brand" href="/"><img src="icon.svg"  width="100" height="60" alt=""></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/todos">Orders</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/drinks">Menu Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>Orders</h1>
+    <div class="center-to" class="contain">
+        <div class="card-body">
+    <% todos.forEach( el => { %>
+            <div class="card"class='todoItem' data-id='<%=el._id%>'>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <span class='del'> Clear </span>
+        </div>
+    <% }) %> 
+    </div>   
+</div>
+<div class="box">
+    <div class="small-box">
+        <div class="close">
+    <form action="/todos/createTodo" method='POST'>
+ <label for="juices">Add an Order:</label>
+ <input type="text" id="name" name='todoItem' placeholder="Customer Name">
+  <select id="drink" name='todoItem'>
+    <option value="ABC">ABC</option>
+    <option value="Mean Green">Mean Green</option>
+    <option value="Lemon Flush">Lemon Flush</option>
+    <option value="Liver Cleanse">Liver Cleanse</option>
+    <option value="Liquid Sunshine">Liquid Sunshine</option>
+    <option value="Celery Craze">Celery Craze</option>
+    <option value="Aloha Suprise">Aloha Suprise</option>
+    <option value="Power Booster">Power Booster</option>
+    <option value="berry bliss">Berry Bliss</option>
+    <option value="Peanut Butter Crunch">Peanut Butter Crunch</option>
+    <option value="It's Nuts">Its Nuts</option>
+    <option value="Boost Shot">Boost Shot</option>
+  </select>
+  <select name='todoItem'>
+  <option value="12oz">12oz</option>
+    <option value="16oz">16oz</option>
+    <option value="24oz">24oz</option>
+    <option value="2oz">2oz</option>
+  </select>
+  <input type="number" id="points" name='todoItem'step="1" placeholder="quanity">
+  <input type="text" id="fname" name='todoItem' placeholder="Notes">
+        <input type="submit" id="add">
+</form>
+</div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

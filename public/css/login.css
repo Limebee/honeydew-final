@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+  background: #f9de56;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+

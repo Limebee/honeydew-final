@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+body{
+    background-color:#f9de56;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    color: green;
+}
+.not{
+    text-decoration: underline;
+    color: red;
+}
+
+.todoItem {
+    border: 3px solid black;
+}
+
+#barista {
+    height: auto;
+    width: 400px;
+}
+
+.contain {
+    border: 2px solid black;
+}
+
+.center-to {
+    font-size: 20px;
+}
+
+.card {
+    border: 1px solid gray;
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+.small-box {
+    display:flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#add {
+    background-color: #6E260E;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}

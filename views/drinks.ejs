@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c15b095f83.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel='stylesheet' href="css/style.css">
+    <link rel='stylesheet' href="css/drinks.css">
+</head>
+<body>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container px-lg-5">
+            <a class="navbar-brand" href="/"><img src="icon.svg"  width="100" height="60" alt=""></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/todos">Orders</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/drinks">Menu Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+      <div class="row height d-flex justify-content-center align-items-center">
+    
+        <div class="col-md-8">
+          <h1>Menu Index</h1>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input id="drink" type="text" class="form-control" placeholder="Type in a drink">
+            <button id="search" class="btn btn-primary">Search</button>
+          </div>
+          
+        </div>
+        
+      </div>
+  </div>
+  <section class="box">
+  <section class="drinkInfo">
+<h2 id="drinkName">Name</h2>
+  <ul>
+    <li>Type: <span id="drinkType"></span></li>
+    <li>Ingredients: <span id="drinkIngredients"></span></li>
+    <li>Benefits: <span id="drinkBenefits"></span></li>
+  </ul>
+  <section>
+  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/drinks.js"></script>
+</body>
+</html> 
